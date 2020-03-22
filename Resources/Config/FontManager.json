@@ -3,12 +3,6 @@
 		"Standard": {
 			"Passes": [
 				{
-					"Offset": {
-						"X": 0,
-						"Y": 0
-					},
-					"Textures": [],
-					"Shader": "RFLib/Sdf",
 					"Uniforms": [
 						{
 							"Name": "uBorder",
