@@ -1,0 +1,8 @@
+{
+	"SceneNode": {
+		"Name": "Scene Root",
+		"NodeType": "TextNode",
+		"Font": "Standard",
+		"Text": "HelloWorld"
+	}
+}

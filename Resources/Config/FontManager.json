@@ -1,0 +1,45 @@
+{
+	"Styles": {
+		"Standard": {
+			"Passes": [
+				{
+					"Offset": {
+						"X": 0,
+						"Y": 0
+					},
+					"Textures": [],
+					"Shader": "RFLib/Sdf",
+					"Uniforms": [
+						{
+							"Name": "uBorder",
+							"Value": [ 0.25, 0.0, -0.95 ]
+						},
+						{
+							"Name": "uSmoothing",
+							"Value": [ 2.0, 3.0, 3.0 ]
+						},
+						{
+							"Name": "uLayerColor[0]",
+							"Value": [ 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0 ]
+						}
+					]
+				}
+			]
+		}
+	},
+	"Configs": {
+		"Standard": {
+			"Typeface": "MontserratBold",
+			"Style": "Standard",
+			"Layout": {
+				"Scale": 50,
+				"Alignment": {
+					"X": 0.5,
+					"Y": 0.5
+				},
+				"CharacterSpacing": -0.2,
+				"LineSpacing": 0
+			}
+		}
+	}
+}
