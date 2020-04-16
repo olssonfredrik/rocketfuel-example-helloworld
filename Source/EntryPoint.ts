@@ -14,16 +14,24 @@ function EntryPoint( divId: string )
 
 	const div = document.getElementById( divId );
 	Asserts.AssertNotNull( div );
-	const canvas = HtmlHelper.CreateCanvas( maxSize );
-	div.appendChild( canvas );
 
-	const glContext = HtmlHelper.CreateWebGLContext( canvas );
-	Asserts.AssertNotNull( glContext, "WebGL Not supported!" );
+	const config = {
+		resource_server: "./",
+		resource_file: "Download.json",
+		Render: {
+			MaxSize: {
+				X: 1920,
+				Y: 1920,
+			},
+			SafeZone: {
+				X: 1200,
+				Y: 960,
+			},
+		},
+	} as IInitConfig;
 
-	const config = { resource_server: "./", resource_file: "Download.json" } as IInitConfig;
-	const engine = new Engine( glContext, safeZone, canvas, div, config );
-	HtmlHelper.ResizeHandler( canvas, div, engine, safeZone, maxSize );
-	engine.Start().then( () => engine.SetChild( new App( engine ) ) );
+	const engine = new Engine( div, config );
+	engine.Init().then( () => engine.Start( new App( engine ) ) );
 }
 
 EntryPoint( "appDiv" );

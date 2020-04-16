@@ -11,13 +11,13 @@
 	"license": "MIT",
 	"private": true,
 	"devDependencies": {
-		"@rocketfuel-toolchain/build": "olssonfredrik/rocketfuel-toolchain-build#v0.0.2",
+		"@rocketfuel-toolchain/build": "github:olssonfredrik/rocketfuel-toolchain-build#v0.0.4",
 		"gulp": "^4.0.0",
 		"typescript": "^3.8.3"
 	},
 	"dependencies": {
 		"@microsoft/applicationinsights-web": "^2.4.4",
-		"@rocketfuel/core": "olssonfredrik/rocketfuel-lib-core#v0.0.4",
+		"@rocketfuel/core": "github:olssonfredrik/rocketfuel-lib-core#v0.2.4",
 		"@types/gl-matrix": "2.4.4",
 		"@types/howler": "^2.1.2",
 		"esotericsoftware-spine": "olssonfredrik/esotericsoftware-spine",
